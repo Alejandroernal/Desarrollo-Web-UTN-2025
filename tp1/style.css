@@ -1,0 +1,80 @@
+h1{
+
+    justify-self:center;
+    }
+    
+    h6, p{
+     color: rgb(102, 116, 129);
+    }
+    
+    p{
+      font-size: 15px;
+      color: rgb(102, 116, 129);
+    }
+    
+    .container {
+      background-color: rgb(255, 255, 255);
+      display:flex;
+      flex-direction: column;
+      padding:2px;
+      border: 2px solid rgb(209, 209, 209);
+      width: 350px;
+      margin: 2px;
+      margin-right: 5px;
+      
+    }
+    
+    .containerM{
+    padding:10px;
+    display: flex;
+    justify-content:center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    }
+    
+    .container p, .container h4, .container h6 {                              /*Espacio entre lineas*/
+        margin: 1px 0; /* Ajusta el valor */
+      }
+    
+      @media screen and (max-width: 1024px) {
+        .containerM {
+          flex-wrap: wrap; /* Permite que los elementos se ajusten a la siguiente fila */
+          justify-content: space-; /* Espacio uniforme entre los elementos */
+        }
+      
+        .container {
+          width: 30%; /* Ajusta el ancho para que quepan 3 en una fila */
+          margin: 10px 1%; /* Agrega margen para separar los contenedores */
+    
+        }
+    
+    
+    /* Alineación específica para los últimos 2 contenedores */
+    .container:nth-child(4) {
+      margin-left:18px; /* Alinea el cuarto contenedor a la izquierda */
+    }    
+      
+        /* Ajuste para la segunda fila (últimos 2 divs) */
+        .container:nth-child(5) {
+          margin-right: auto;
+        }
+      }
+    
+    
+    
+    
+    @media screen and (max-width: 600px) {
+      h1 {
+        font-size: 1.8em; /* Ajusta el tamaño del título para pantallas pequeñas */
+        }
+    
+      .containerM{
+        flex-direction: column;
+        align-items: center;
+      }  
+      
+       .container {
+        flex-direction: column;
+        width: 90%; /* Cambia el ancho a un porcentaje para que se ajuste */
+        margin: 10px auto; /* Centra los contenedores y agrega espacio */
+      }
