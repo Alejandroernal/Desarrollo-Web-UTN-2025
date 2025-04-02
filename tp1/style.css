@@ -73,8 +73,9 @@ h1{
         align-items: center;
       }  
       
-       .container {
-        flex-direction: column;
-        width: 90%; /* Cambia el ancho a un porcentaje para que se ajuste */
-        margin: 10px auto; /* Centra los contenedores y agrega espacio */
+         .container {
+          flex-direction: column;
+          width: 90%; /* Cambia el ancho a un porcentaje para que se ajuste */
+          margin: 10px auto; /* Centra los contenedores y agrega espacio */
+        }
       }
